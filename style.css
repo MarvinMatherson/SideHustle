@@ -11,8 +11,21 @@ a:hover{
 }
 
 
+#ytlink{
+	position: relative;
+	top: 3px;
+}
+
+#ytlink{
+	color: red;
+}
+
+#backhome{
+	color: black;
+}
+
 h1{
-	font-family: 'Lexend exa';s
+	font-family: 'Lexend exa';
 }
 
 p{
