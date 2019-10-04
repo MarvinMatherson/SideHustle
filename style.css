@@ -1,0 +1,70 @@
+/* font-family: 'Lexend Exa', sans-serif;
+font-family: 'Raleway', sans-serif; */
+a{
+	font-family: 'Lexend Exa';
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+h1{
+	font-family: 'Lexend exa';s
+}
+
+p{
+	font-family: 'Raleway';
+	text-align: center;
+}
+img{
+	text-align: left;
+}
+.grandentrance{
+	background-color: rgba(0,44,255,0.50);
+}
+
+.mysearchbar{
+	align-self: center;
+}
+
+#barr{
+	border: 1px solid black;
+	font-family: 'Raleway';	
+}
+
+
+.introtext{
+	text-align: center;
+}
+
+
+.mymenu{
+	word-spacing: 10px;
+	align-self: center;
+	text-align: center;
+}
+
+
+.intro{
+	text-align: center;
+
+}
+
+.introvideo{
+	text-align: center;
+}
+
+.firsttitle{
+	font-size: 40px;
+}
+
+.Mainevent{
+	text-align: center;
+}
+
+.fact{
+	text-align: center;
+}
