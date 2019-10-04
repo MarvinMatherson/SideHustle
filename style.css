@@ -32,12 +32,16 @@ img{
 
 #barr{
 	border: 1px solid black;
-	font-family: 'Raleway';	
+	font-family: 'Raleway';
 }
 
 
 .introtext{
 	text-align: center;
+}
+
+.page-header-fluid .btn:hover {
+	background-color: #FFF;
 }
 
 

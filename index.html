@@ -1,152 +1,86 @@
 <!DOCTYPE html>
 <html>
-   <head>
+  <head>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://fonts.googleapis.com/css?family=Lexend+Exa|Raleway:200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
       <title>MarvinMark2</title>
-</head>
+ </head>
 <body>
-	<div class="page-header-fluid grandentrance">
-
-<div class="container-fluid mycontainer">
-  <div class="row">
-
-	  <div class="col-lg-4  col-sm-12 introtext">
-		  <h1>Marvin Website</h1>
-
-	  </div>
-
+ <div class="page-header-fluid grandentrance">
+   <div class="container-fluid mycontainer">
+     <div class="row">
+	   <div class="col-lg-4 col-sm-12 introtext">
+		    <h1><a href="https://www.youtube.com/marvinentertainment"target="_blank"><i class="fab fa-youtube"></a></i><a href="index.html">The Marvin</a></h1>
+	   </div>
 <div class="col-lg-4 col-sm-12 mysearchbar">
-
-	   <input class="form-control" type="text" placeholder="Search" aria-label="Search" id="barr">
-
+	<form action="site.php" method="get">
+      <input class="form-control" type="Search" placeholder="Search" aria-label="Search" id="barr">
+    </form>
 </div>
-
-<br>
-
-    <div class= "col-xl-4 col-lg-4 col-md-12 mymenu">
-
-
-			<button type="button" class="btn btn-outline-dark"><a href="index.html">Home</a></button>
-
-		    <button type="button" class="btn btn-outline-dark"><a href="https://www.youtube.com/marvinentertainment">Youtube</a></button>
-
-        <br>
-
-
-
-
-
-
-
-
-	  </div>
-
+<div class= "col-xl-4 col-lg-4 col-md-12 mymenu">
+  <button type="button" class="btn btn-outline-dark"><a href="index.html">Home</a></button>
+    <button type="button" class="btn btn-outline-dark"><a href="https://www.youtube.com/marvinentertainment">Youtube</a></button>
+	  <br>
 </div>
 </div>
 </div>
 </div>
-
-
-
-	<br>
-
-	<div class="container">
-		<div class="row">
-
-		<div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-xs-12 introvideo">
-
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
-<iframe class="latestVideoEmbed" vnum= "1" cid="UCklSpaoHcKc3LMfT5XBoRgA" height="300px" width="100%" frameborder="0" allowfullscreen></iframe>
-
-<script>
-var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
-function loadVideo(iframe){
-    $.getJSON( reqURL + iframe.getAttribute('cid'),
-      function(data) {
-         var videoNumber = (iframe.getAttribute('vnum')?Number(iframe.getAttribute('vnum')):0);
-        console.log(videoNumber);
-         var link = data.items[videoNumber].link;
-         id = link.substr(link.indexOf("=") + 1);
-         iframe.setAttribute("src","https://youtube.com/embed/"+id + "?controls=0&autoplay=0");
-      }
-   );
-}
-var iframes = document.getElementsByClassName('latestVideoEmbed');
-for (var i = 0, len = iframes.length; i < len; i++){
-       loadVideo(iframes[i]);
-}
-</script>
-
-
-
-
-			<hr>
-		</div>
-
-	     <div class="col-xl-6 col-lg-4 col-md-12 col-sm-12 col-xs-12 intro">
-
-			<h1 class="firsttitle">Latest video on the channel!!!</h1>
-
-			 <hr>
-			  <p></p>
-
-			</div>
-
-		</div>
-        </div>
-
-
-		 <div class="container">
-			 <div class="jumbotron">
-				 <h1 class="Mainevent"></h1>
-
-				 <div class="col-lg-12">
-					 <p
-						<br> <br>
-
-
-
-
+     <br>
+<div class="container">
+  <div class="row">
+    <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-xs-12 introvideo">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <iframe class="latestVideoEmbed" vnum= "1" cid="UCklSpaoHcKc3LMfT5XBoRgA" height="300px" width="100%" frameborder="0" allowfullscreen></iframe>
+           <script>
+             var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+               function loadVideo(iframe){
+                 $.getJSON( reqURL + iframe.getAttribute('cid'),
+                   function(data) {
+                     var videoNumber = (iframe.getAttribute('vnum')?Number(iframe.getAttribute('vnum')):0);
+                       console.log(videoNumber);
+                         var link = data.items[videoNumber].link;
+                           id = link.substr(link.indexOf("=") + 1);
+                             iframe.setAttribute("src","https://youtube.com/embed/"+id + "?controls=0&autoplay=0");
+                             }
+                             );
+                             }
+                            var iframes = document.getElementsByClassName('latestVideoEmbed');
+                              for (var i = 0, len = iframes.length; i < len; i++){
+                            loadVideo(iframes[i]);
+                            }
+          </script>
+		    <hr>
+    </div>
+<div class="col-xl-6 col-lg-4 col-md-12 col-sm-12 col-xs-12 intro">
+  <h1 class="firsttitle">Latest video on the channel!!!</h1>
+		   <hr>
+  <p></p>
 </div>
-
-
-
+ </div>
 </div>
-
-
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="Mainevent"></h1>
+      <div class="col-lg-12">
+		<p></p>
+		  <br> <br>
+     </div>
+ </div>
 </div>
-
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 factday">
 				<h3 class="fact">Today's fact of the day:</h3>
-
-
-
            </div>
-
-
-</div>
-</div>
-
-
-
-
-
+        </div>
+    </div>
 <footer class="page-footer font-small blue">
-
-
   <div class="footer-copyright text-center py-3">© 2019 Copyright:
     <a href="https://www.youtube.com/channel/UCklSpaoHcKc3LMfT5XBoRgA">Marvin</a>
   </div>
-
-
 </footer>
 
 
@@ -160,7 +94,7 @@ for (var i = 0, len = iframes.length; i < len; i++){
 
 
 
-
+<script src="https://kit.fontawesome.com/ce87640ca1.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
