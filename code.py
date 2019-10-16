@@ -20,29 +20,26 @@ portion_saved = 0.1
 #deposit = current_savings *0.04 /12
 
 
-Salary = float(input("Enter your annual salary in thousands for example 40:")
-Saved = float(input("Enter the percent of your salary,  to save as a decimal:")
-Total = int(input("Enter the cost of your dream home:"))
+
+
+#This code allows users to entert commas
+salaryString = input("Enter your annual salary in thousands for example 40,000:")
+salary = float(salaryString.replace(",", "."))
+
+#salary = float(input("Enter your annual salary in thousands:"))
+saved = float(input("Enter the percent of your salary, to save as a decimal for example 0.1:"))
+
+total = int(input("Enter the cost of your dream home:"))
 #deposit_calculator(Total, Salary, Saved)
 
-House = (f"So your Annual Salary is {Salary} thousand")
-
-print(House)
-4
-def current_savings():
-    return 
-
-current_savings = Salary / Saved
-print(current_savings)
+house = (f"So your Annual Salary is {salary}")
+print(house)
 #This will leave you with the amount you will be saving each year.
 r = 0.04 
+current_savings = salary / saved
+print(f"You first will be saving")
 #This is what your investment returns
-additional_current_savings = current_savings + r/ 12
+additional_current_savings = current_savings*r / 12
+40,000
 #This is how much you will be saving each month.
-print(current_savings)
-print(f"Each month you will be saving £{additional_current_savings}")
-
-
-
-
-
+print(f"Each month you will be saving {additional_current_savings:.1f}")
