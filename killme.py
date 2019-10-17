@@ -27,6 +27,7 @@ time = totalHouse - new_towardshouse
 
 while new_towardshouse < totalHouse:
     totalHouse += new_towardshouse* r/12
+    
     break
 
 print(f"{totalHouse}")
