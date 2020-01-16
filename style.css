@@ -11,11 +11,7 @@ a:hover{
 	text-decoration: none;
 }
 
-i{
-	position: relative;
-	right: 770px;
-	color: #008db1;
-	border: 1px solid black;
+
 }
 #ytlink{
 	position: relative;
@@ -26,25 +22,18 @@ i{
 	color: red;
 }
 
-#backhome{
-	margin: auto;
-  width: 50%;
-	color: #FFF;
- padding: 10px;
+
+/*The three items in the header */
+#yt{
+
 }
 
-#yt{
-	position: relative;
-	right: 770px;
-	bottom: 2px;
-
+#backhome{
+	color: #FFF;
 }
 
 #menu{
 	color: #008db1;
-	position: relative;
-	left: 870px;
-	bottom: 60px;
 }
 
 
