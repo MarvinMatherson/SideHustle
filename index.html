@@ -3,36 +3,52 @@
   <head>
     <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico'>
      <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://fonts.googleapis.com/css?family=Lexend+Exa|Raleway:200&display=swap" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Alata|Amiko|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="script" href="./script.js">
     <link rel="stylesheet" href="style.css">
       <title>Marvin is sicc</title>
  </head>
 <body>
- <div class="page-header-fluid grandentrance">
-   <div class="container-fluid mycontainer">
-     <div class="row">
-	   <div class="col-lg-4 col-sm-12 introtext">
-		    <h1><a href="https://www.youtube.com/marvinentertainment"target="_blank" id="ytlink"><i class="fab fa-youtube"></a></i><a href="index.html"id="backhome">  The Marvin</a></h1>
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 introtext">
+     <div class="grandentrance">
+		    <h1><img src="./LOGO.png"width="4.5%" id="yt"></img><a href="index.html"id="backhome">The Marvin</a></h1>
+        <div class="dropdown" id="menu">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="./index.html">Home</a>
+            <a class="dropdown-item" href="#">Dr D</a>
+            <a class="dropdown-item" href="#">About</a>
+          </div>
+        </div>
 	   </div>
-<div class="col-lg-4 col-sm-12 mysearchbar">
-	<form action="site.php" method="get">
-      <input class="form-control" type="Search" placeholder="Search" aria-label="Search" id="barr">
-    </form>
-</div>
-<div class= "col-xl-4 col-lg-4 col-md-12 mymenu">
-  <button type="button" class="btn btn-outline-dark"><a href="./index.html">Home</a></button>
-    <button type="button" class="btn btn-outline-dark"><a href="./aboutme.html">About Me</a></button>
-	  <br>
 </div>
 </div>
-</div>
-</div>
-     <br>
+<br>
+<br><br><br>
 <div class="container">
+<div class="row">
+  <div class="col-lg-6">
+  <h2 class="temperture" id="weather"></h2>
+</div>
+
+<div id="icon">
+</div>
+</div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="jumbotron" id="ytvideo">
   <div class="row">
     <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-xs-12 introvideo">
+      <h2 class="firsttitle">The latest video on the channel</h2>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <iframe class="latestVideoEmbed" vnum= "1" cid="UCklSpaoHcKc3LMfT5XBoRgA" height="300px" width="100%" frameborder="0" allowfullscreen></iframe>
            <script>
@@ -56,34 +72,63 @@
 		    <hr>
     </div>
 <div class="col-xl-6 col-lg-4 col-md-12 col-sm-12 col-xs-12 intro">
-  <h1 class="firsttitle">Latest video on the channel!!!</h1>
+  <h2 class="secondtitle">Video Title</h2>
 		   <hr>
-  <p></p>
+  <p>Video Description</p>
 </div>
  </div>
 </div>
-<div class="container">
-  <div class="jumbotron">
-    <h1 class="Mainevent"></h1>
+  <div class="jumbotron" id="Mainevent">
       <div class="col-lg-12">
-		<p></p>
+      <div class="" id="bloggo">
+      <h2 class="Blog">Daily Blog</h2>
+      </div>
+      <br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
 		  <br> <br>
      </div>
  </div>
+ <div class="photos">
+ <div class="row">
+   <div class="col-lg-4">
+     <img src="./placeholder4.png" alt="" width="100%">
+   </div>
+   <div class="col-lg-4">
+     <img src="./placeholder4.png" alt="" width="100%">
+   </div>
+   <div class="col-lg-4">
+     <img src="./placeholder4.png" alt="" width="100%">
+   </div>
+ </div>
+<br>
+<div class="suggestions">
+  <div class="row">
+    <div class="col-lg-12">
+      <textarea rows="5" cols="156"placeholder="   Do you have an idea for a video? If so, put it here and your idea could be the inspiration for the next one!"></textarea>
+      <br>
+    <button type="button" class="btn  btn-sm" id="button">Small button</button>
+    </div>
+  </div>
 </div>
-	<div class="container">
+<br>
+
 		<div class="row">
-			<div class="col-lg-12 factday">
-				<h3 class="fact">Today's fact of the day:   Finished websites are so much more fun!</h3>
+			<div class="col-lg-12" id="factday">
+				<h2 class="fact">Fun Fact of the day: <span class="fact"> </h2>
            </div>
         </div>
     </div>
+    <br>
+    <hr class="line3">
 <footer class="page-footer font-small blue">
-  <div class="footer-copyright text-center py-3">© 2019 Copyright:
-    <a href="https://www.youtube.com/channel/UCklSpaoHcKc3LMfT5XBoRgA">Marvin</a>
+  <div class="footer-copyright text-center py-3">Designed by Dolores, coded by Marvin. © 2020 Copyrighted
+    <a href="https://www.youtube.com/channel/UCklSpaoHcKc3LMfT5XBoRgA"></a>
   </div>
 </footer>
 
+
+
+</div>
 
 <script>
 $(document).ready(function(){
@@ -93,12 +138,11 @@ $(document).ready(function(){
 });
 </script>
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/ce87640ca1.js" crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+<script src="./script.js"></script>
 
 </body>
 </html>

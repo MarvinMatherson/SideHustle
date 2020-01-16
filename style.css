@@ -1,7 +1,8 @@
-/* font-family: 'Lexend Exa', sans-serif;
-font-family: 'Raleway', sans-serif; */
+/* font-family: 'Alata', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Amiko', sans-serif; */
 a{
-	font-family: 'Lexend Exa';
+	font-family:;
 	text-decoration: none;
 	color: black;
 }
@@ -10,7 +11,12 @@ a:hover{
 	text-decoration: none;
 }
 
-
+i{
+	position: relative;
+	right: 770px;
+	color: #008db1;
+	border: 1px solid black;
+}
 #ytlink{
 	position: relative;
 	top: 3px;
@@ -21,31 +27,126 @@ a:hover{
 }
 
 #backhome{
-	color: black;
+	margin: auto;
+  width: 50%;
+	color: #FFF;
+ padding: 10px;
 }
+
+#yt{
+	position: relative;
+	right: 770px;
+	bottom: 2px;
+
+}
+
+#menu{
+	color: #008db1;
+	position: relative;
+	left: 870px;
+	bottom: 60px;
+}
+
+
 
 h1{
-	font-family: 'Lexend exa';
+	font-family: 'Alata';
 }
 
-p{
+h2{
 	font-family: 'Raleway';
+	font-weight: bolder;
+}
+p{
+	font-family: 'Amiko';
 	text-align: center;
 }
-img{
-	text-align: left;
-}
+
+
+
 .grandentrance{
-	background-color: rgba(0,44,255,0.50);
+	background-color:#9f9f9f;
+  z-index: 1;
+	width: 100%;
+	height:60px;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	box-shadow: 3px 3px 5px black;
+	position: fixed;
 }
 
-.mysearchbar{
-	align-self: center;
+#weather{
+	font-size: 30px;
 }
 
-#barr{
+
+#icon img{
+	position: relative;
+  left: 440px;
+	border-radius: 20px;
+}
+
+#ytvideo{
+	background-color: #ffa382;
+	border-radius: 20px;
 	border: 1px solid black;
-	font-family: 'Raleway';
+}
+
+#Mainevent{
+	background-color: #ffa382;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+
+
+#bloggo{
+	background-color:#008db1;
+	border-radius: 20px;
+	border: 1px solid black;
+	text-align: center;
+	color: #FFF;
+}
+
+.Blog{
+	position: relative;
+  top: 3px;
+}
+
+#factday{
+	background-color:#008db1;
+	border-radius: 20px;
+	border: 1px solid black;
+	color: #FFF;
+
+}
+
+.fact{
+position: relative;
+top: 3px;
+}
+
+.photos img{
+	border-radius: 20px;
+	border: 1px solid black;
+
+}
+
+.suggestions textarea{
+	border-radius: 5px;
+		border: 1px solid black;
+}
+
+#button{
+	position: relative;
+	left: 1020px;
+	border-radius: 20px;
+	background-color:#9f9f9f;
+		border: 1px solid black;
+}
+
+.line3{
+border: 1px solid black;
 }
 
 
@@ -54,7 +155,7 @@ img{
 }
 
 .page-header-fluid .btn:hover {
-	background-color: #FFF;
+	background-color:#FFF;
 }
 
 
@@ -75,18 +176,21 @@ img{
 }
 
 .firsttitle{
-	font-size: 40px;
+	position: relative;
+	bottom: 10px;
+	font-size: 32px;
 }
 
-.Mainevent{
-	text-align: center;
+.secondtitle{
+	position:
+	font-size: 32px;
 }
 
-.fact{
-	text-align: center;
-}
+
 
 .imagescarimg{
 	width: 20px;
 
 }
+
+/* MEDIA QUERIES */
