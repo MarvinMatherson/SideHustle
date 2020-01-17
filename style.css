@@ -7,6 +7,8 @@ a{
 	color: black;
 }
 
+
+
 a:hover{
 	text-decoration: none;
 }
@@ -65,14 +67,18 @@ p{
 	position: fixed;
 }
 
+#see{
+}
+
 #weather{
-	font-size: 30px;
+	font-size: 25px;
 }
 
 
 #icon img{
 	position: relative;
   left: 440px;
+	bottom: px;
 	border-radius: 20px;
 }
 
@@ -107,7 +113,6 @@ p{
 	border-radius: 20px;
 	border: 1px solid black;
 	color: #FFF;
-
 }
 
 .fact{
@@ -182,4 +187,72 @@ border: 1px solid black;
 
 }
 
-/* MEDIA QUERIES */
+
+
+#headerItem1{
+position: relative;
+top: 8px;
+left: 20px;
+}
+
+#headerItem1 i{
+	color: #008db1;
+	position: relative;
+	bottom: 11px;
+
+}
+#headerItem2 h1{
+font-size: 60px;
+text-align: center;
+position: relative;
+top: -10px;
+}
+
+#headerItem3{
+	text-align: right;
+	position: relative;
+	right: 15px;
+	top: 10px;
+}
+
+
+
+
+/* MEDIA QUERIES, biggest screen size to the smallest*/
+
+
+
+
+@media screen and (max-width: 985px) {
+	#headerItem2 h1{
+		font-size: 33px;
+		position: relative;
+		top: 9px;
+	}
+	}
+
+
+@media screen and (max-width: 575px) {
+	.grandentrance{
+		position: relative;
+		height: 200px;
+	}
+
+	#headerItem1{
+		text-align: center;
+		position: relative;
+		left: -4px;
+		top: 20px;
+	}
+
+	#headerItem2 h1{
+			font-size: 60px;
+	}
+
+
+	#headerItem3{
+		text-align: center;
+	}
+
+
+	}
