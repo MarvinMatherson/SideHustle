@@ -10,7 +10,7 @@ var latitude = position.coords.latitude;
 var longitude = position.coords.longitude;
   console.log(longitude);
 var apikey = "7975291d9b983f7792c4307b9d279ed0";
-var temp = 'celcius today';
+
 
 
  $.getJSON("http://api.weatherstack.com/current?access_key="+apikey+"&query="+latitude+"," +longitude, function(data){
@@ -32,19 +32,19 @@ var temp = 'celcius today';
 var today = new Date();
 var hourNow = today.getHours();
 
-//This is howe to display a different message depending on ther time of day
+//This is how to display a different message depending on ther time of day
 var greeting;
 if (hourNow > 18){
-  greeting = 'Good evening, ';
+  greeting = 'Good evening. ';
 } else if (hourNow > 12){
-  greeting = 'Good afternoon, ';
+  greeting = 'Good afternoon. ';
 } else if (hourNow > 0) {
-  greeting = 'Good morning, ';
+  greeting = 'Good morning. ';
 }
 
 console.log("We gonna say " +greeting+ "at this time");
 
-$('.temperture').html(greeting+ "the temperature in "+location+", "+country+" is " +temperature+ " celcius. ");
+$('.temperture').html(greeting+ "<br>The temperature in "+location+", "+country+" is " +temperature+ " celcius. ");
 //IM GETTING FUCKING PISSED OFF WHY WONT THE IMAGE GO ONTO THE HTML
 
 $('#icon').append("<img src='"+wicon+"'></img>");

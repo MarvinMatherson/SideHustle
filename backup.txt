@@ -1,0 +1,10 @@
+<div class="row" id="see">
+  <div class="col-lg-4 col-md-4 col-sm-4" id="headerItem1">
+  <i class="fab fa-youtube fa-3x"></i>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4" id="headerItem2">
+    <h1 id="backhome">The Marvin</h1>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4" id="headerItem3">
+<button type="button" class="btn btn-secondary">Dolores</button>
+<button type="button" class="btn btn-secondary">About us</button>
