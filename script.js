@@ -1,9 +1,34 @@
 $(document).ready(function(){
 
 
+$.getJSON("https://www.googleapis.com/youtube/v3/activities?part=snippet,contentDetails&channelId=UCklSpaoHcKc3LMfT5XBoRgA&key=AIzaSyAXwusx-FeUx1q-VaxFMjeOhsbXaSgSc6w" , function(video){
+console.log(video);
+
+var title = video.items[0].snippet.title;
+console.log(title);
+
+var description = video.items[0].snippet.description;
+console.log(description);
+
+var vidThumbnail = video.items[0].snippet.thumbnails.medium.url;
+console.log(vidThumbnail);
+
+var pullLink = video.items[0].contentDetails.upload.videoId;
+console.log(pullLink);
+
+var link = "https://www.youtube.com/watch?v="+pullLink;
+console.log(link)
+
+$(".secondtitle").html(title);
+$(".vidDescription").html(description);
+$('#thumbnailvid').attr('src', +vidThumbnail);
+$("#linkus").append("<a href ="+link+" target='_blank'>Watch the video!</a>");
+$('#thumbnailvid').append("<img src='"+vidThumbnail+"'></img>");
+
+
+
 navigator.geolocation.getCurrentPosition(position => {
 console.log(position);
-
 
 var latitude = position.coords.latitude;
   console.log(latitude);
@@ -50,7 +75,7 @@ $('.temperture').html(greeting+ "<br>The temperature in "+location+", "+country+
 $('#icon').append("<img src='"+wicon+"'></img>");
 
 
-
+});
 });
 });
 });

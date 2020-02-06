@@ -3,22 +3,33 @@
   <head>
     <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico'>
      <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152610520-2"></script>
+     <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-152610520-2');
+     </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      <link href="https://fonts.googleapis.com/css?family=Alata|Amiko|Raleway&display=swap" rel="stylesheet">
      <script src="https://kit.fontawesome.com/ce87640ca1.js" crossorigin="anonymous"></script>
-    <link rel="script" href="./script.js">
-    <link rel="stylesheet" href="style.css">
-      <title>MaD are sicc</title>
-</head>
+     <link rel="script" href="./script.js">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+      <title>TheMarvin</title>
+      <meta name="description" content="Marvin's blogging website, for regular updates, infomation and entertainent. Links and previews of recent Youtube videos are all included.">
+      <meta name="keywords" content=" TheMarvin, themarvin, theMarvin, Marvin, Marvin Matherson, Marvin Entertainent, Marvin Peter Matherson, blogging website, blog">
+     </head>
 <body>
   <header>
   <nav>
-    <h1 id="headerItem2">The Marvin</h1>
+    <a href="./index.html"><h1 id="headerItem2">The Marvin</h1></a>
     <ul id="headerItem3">
-      <li><a href="./d.html">Dolores</a></li>
-      <li><a href=".about.html">About</a></li>
+      <li><a href="./MyError.html">Dolores</a></li>
+      <li><a href="./MyError.html">About</a></li>
     </ul>
 </nav>
 </header>
@@ -50,75 +61,72 @@
   <div class="row">
     <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-xs-12 introvideo">
       <h2 class="firsttitle">The latest video on the <a href="http://youtube.com/c/marvinentertainment" target="blank">channel</a></h2>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <iframe class="latestVideoEmbed" vnum= "1" cid="UCklSpaoHcKc3LMfT5XBoRgA" height="300px" width="100%" frameborder="0" allowfullscreen></iframe>
-           <script>
-             var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
-               function loadVideo(iframe){
-                 $.getJSON( reqURL + iframe.getAttribute('cid'),
-                   function(data) {
-                     var videoNumber = (iframe.getAttribute('vnum')?Number(iframe.getAttribute('vnum')):0);
-                       console.log(videoNumber);
-                         var link = data.items[videoNumber].link;
-                           id = link.substr(link.indexOf("=") + 1);
-                             iframe.setAttribute("src","https://youtube.com/embed/"+id +"?controls=0&autoplay=0");
-                             }
-                             );
-                             }
-                            var iframes = document.getElementsByClassName('latestVideoEmbed');
-                              for (var i = 0, len = iframes.length; i < len; i++){
-                            loadVideo(iframes[i]);
-                            }
-          </script>
-		    <hr>
+      <hr>
+      <div id="thumbnailvid"></div>
+<br>
+
+
+
+          <h3 id="linkus"></h3>
     </div>
 <div class="col-xl-6 col-lg-4 col-md-12 col-sm-12 col-xs-12 intro">
   <h2 class="secondtitle">Video Title</h2>
 		   <hr>
-  <p>Video Description</p>
+  <p class="vidDescription">Video Description</p>
 </div>
  </div>
 </div>
   <div class="jumbotron" id="Mainevent">
       <div class="col-lg-12">
       <div class="" id="bloggo">
-      <h2 class="Blog">Daily Blog</h2>
+      <h2 class="Blog">A new beginning</h2>
       </div>
       <br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-		  <br> <br>
+		<p>Hello guys! Welcome to our website. Before I start, I want to thank my dear friend in far Great Britain, Marvin who put a lot of effort making this page functional.<br><br>
+
+My name is Dolores and let me tell you a story of how it all started.<br><br>
+
+I recently finished high school and I didn’t make a choice to leave my country as my other friends did. And that is like  tradition, considering the situation here in Bosnia and Herzegovina. But, we’ll talk about it another time.
+My wish is to start at the faculty of medicine at a university that is 310 km far from my home town. I started preparing for the entrance exam  which depends if I will get accepted.To fulfill my time I started reading and that wasn’t enough.Knowing that Marvin actively codes, I became curious.
+All this exposure, coding became interesting, and you start to imagine that you work for some high-tech hack group. When I acknowledged his work I thought to myself: “I want to do that too”, but as a hobby. (I’m staying loyal to my medicine, sorry Marv).<br> <br>
+
+First we started on a website called Repl.it, where I learned the basics. I continued educating myself with the help of online courses. After many mistakes, with my lack of knowledge and his patience we made our first website. To be honest, it didn't look good, but I was really proud. After that, I didn’t participate in any projects and distanced myself from coding. I started studying and focusing more on my faculty.
+I didn't realize how hard coding is up until now. I thought it’s gonna be easy, but turned out to be a bit more challenging! Over time, the things I knew about I forgot and couldn't quite remember. I reconciled with that fact...
+It was such a good and funny journey that helped me fall in love in a special way with coding. And even with the little of what I know, I put coding as an additional option if I don't make it in medicine. <br> <br>
+
+Next few months I dedicated my time to physics, chemistry and biology preparing for that important exam, until Marvin came across with an idea of us collaborating again. I couldn’t say no to my friend, so I accepted that offer.I wanted to make him happy.
+Marvin introduced to me one beautiful website, Moqups where you can design your page before coding it. He already started working on it. And let me tell you one thing, as a newbie I totally enjoyed it. He asked me to help him with the color scheme, because he knew I have a good taste in designing.And of course, I immediately went to work, trying to figure out the best color combination. We ran into a few issues, which was expected. I was there working with him for a couple of more days, helping as much I could. But then unfortunately I left due to some private reasons. Despite my absence Marvin stayed and continued working. I remember how much he raged because of some silly things which he was able to fix in the end!!!<br> <br>
+
+So now when I’m finishing this I just want to say thank you Marvin. You get the most credit for all of this.
+Marvin spent a lot of his precious time on this, beside his job and college. I’m glad we became a small, but effective duo.<br> <br>
+
+Thank you too, my dear visitors. We are still at the beginning. There's a lot to do and add, but new ideas are coming up every day. Stay tuned!
+
+Love, MaD
+</p>
      </div>
  </div>
- <div class="photos">
- <div class="row">
-   <div class="col-lg-4">
-     <img src="./placeholder4.png" alt="" width="100%">
-   </div>
-   <div class="col-lg-4">
-     <img src="./placeholder4.png" alt="" width="100%">
-   </div>
-   <div class="col-lg-4">
-     <img src="./placeholder4.png" alt="" width="100%">
-   </div>
- </div>
-<br>
+ <div class="instafeed">
+ <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-58c34c98-3381-46c4-994b-955ec11fe250"></div>
+</div>
   <div class="row">
     <div class="col-lg-12">
-    <form>
-  <textarea class="form-control" placeholder="Do you have an idea for a video? If so, put it here and your idea could be the inspiration for the next one!" aria-label="With textarea"></textarea>
+      <form action="https://send.pageclip.co/qREpptZnx2kr4jRTZUji9PoQy1kUqeMb/Input" class="pageclip-form" method="post">
+  <input type="textarea" class="form-control" placeholder="Do you have an idea for a video? If so, put it here!">
 </form>
   </div>
 </div>
 <br>
 <div class="container">
 		<div class="row">
-			<div class="col-lg-12" id="factday">
-				<h2 class="fact">Fun fact of the day: <span class="fact"> </h2>
+
+
            </div>
-        </div>
+
     </div>
-    <br>
     <hr class="line3">
+    </div>
 <footer class="page-footer font-small blue">
   <div class="footer-copyright text-center py-3">Designed by Dolores, coded by Marvin. © 2020 Copyrighted
     <a href="https://www.youtube.com/channel/UCklSpaoHcKc3LMfT5XBoRgA"></a>
@@ -136,12 +144,14 @@ $(document).ready(function(){
   });
 });
 </script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/ce87640ca1.js" crossorigin="anonymous"></script>
 <script src="./script.js"></script>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
+
 
 </body>
 </html>

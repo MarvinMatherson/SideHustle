@@ -56,7 +56,7 @@ align-self: left;
 
 #headerItem2{
 	position: relative;
-	top:4px;
+	top:2px;
 }
 
 #headerItem3 li{
@@ -142,6 +142,13 @@ iframe{
 	border: 1px solid black;
 }
 
+.instafeed img {
+	border: 3px solid black;
+}
+
+.instafeed text{
+	color: #FFF;
+}
 
 .fact{
 position: relative;
@@ -157,7 +164,7 @@ top: 3px;
 
 .suggestions textarea{
 	border-radius: 5px;
-		border: 1px solid black;
+	border: 1px solid black;
 }
 
 #button{
@@ -197,12 +204,12 @@ border: 1px solid black;
 .firsttitle{
 	position: relative;
 	bottom: 10px;
-	font-size: 32px;
+	font-size: 35px;
 }
 
 .secondtitle{
-	position:
-	font-size: 32px;
+	position:;
+	font-size: 30px;
 }
 
 
