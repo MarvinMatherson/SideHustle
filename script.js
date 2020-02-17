@@ -16,32 +16,35 @@ console.log(vidThumbnail);
 var pullLink = video.items[0].contentDetails.upload.videoId;
 console.log(pullLink);
 
-var link = "https://www.youtube.com/watch?v="+pullLink;
+var link = "https://www.youtube.com/embed/"+pullLink;
 console.log(link)
 
 $(".secondtitle").html(title);
 $(".vidDescription").html(description);
 $('#thumbnailvid').attr('src', +vidThumbnail);
-$("#linkus").append("<a href ="+link+" target='_blank'>Watch the video!</a>");
-$('#thumbnailvid').append("<img src='"+vidThumbnail+"'></img>");
+$("#linkus").append('<iframe width="500" height="315" src="'+link+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+$('#thumbnailvid').append("<img src='"+vidThumbnail+"'alt='YouTube video thumbnail'></img>");
 
 
 
-navigator.geolocation.getCurrentPosition(position => {
+navigator.geolocation.getCurrentPosition(position =>{
+$('.locationWarning').hide()
 console.log(position);
+
 
 var latitude = position.coords.latitude;
   console.log(latitude);
 var longitude = position.coords.longitude;
   console.log(longitude);
-var apikey = "7975291d9b983f7792c4307b9d279ed0";
+var apikey = "3d486351bcd34e2e90b163543200602";
 
 
 
- $.getJSON("http://api.weatherstack.com/current?access_key="+apikey+"&query="+latitude+"," +longitude, function(data){
+
+ $.getJSON("https://api.weatherapi.com/v1/current.json?key="+apikey+"&query="+latitude+"," +longitude, function(data){
   console.log(data);
 
-  var temperature = data.current.temperature;
+  var temperature = data.current.temp_c;
   console.log(temperature)
 
   var location = data.location.name;
@@ -50,8 +53,8 @@ var apikey = "7975291d9b983f7792c4307b9d279ed0";
   var country = data.location.country;
   console.log(country)
 
-  var wicon = data.current.weather_icons["0"];
-  console.log(wicon)
+  //var wicon = data.current.weather_icons["0"];
+  //console.log(wicon)
 
 //This is how to get the current time in a variable
 var today = new Date();
@@ -72,7 +75,7 @@ console.log("We gonna say " +greeting+ "at this time");
 $('.temperture').html(greeting+ "<br>The temperature in "+location+", "+country+" is " +temperature+ " celcius. ");
 //IM GETTING FUCKING PISSED OFF WHY WONT THE IMAGE GO ONTO THE HTML
 
-$('#icon').append("<img src='"+wicon+"'></img>");
+//$('#icon').append("<img src='"+wicon+"'></img>");
 
 
 });

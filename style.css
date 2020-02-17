@@ -85,6 +85,9 @@ color: #FFF;
 	font-size: 25px;
 }
 
+.locationWarning p{
+	text-align: center;
+}
 
 .moveme{
 	text-align: right;
@@ -102,7 +105,7 @@ border-radius: 20px;
 }
 
 iframe{
-	border-radius: 20PX;
+	border-radius: 20px;
 }
 
 
@@ -231,16 +234,17 @@ border: 1px solid black;
 @media screen and (max-width: 470px) {
 
  #headerItem2{
-	font-size: 25px;
+	font-size: 30px;
 	position: relative;
 	left: 20px;
-	top: 10px;
+	top: 3px;
  }
 
   #headerItem3 li{
 	  padding: 5px;;
 	position: relative;
 	right: 6px;
+	top:8px;
  }
 }
 
