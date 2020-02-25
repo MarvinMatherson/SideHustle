@@ -22,7 +22,7 @@ console.log(link)
 $(".secondtitle").html(title);
 $(".vidDescription").html(description);
 $('#thumbnailvid').attr('src', +vidThumbnail);
-$("#linkus").append('<iframe width="500" height="315" src="'+link+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+$("#linkus").append('<iframe title="My latest video" width="100%" height="315" src="'+link+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
 $('#thumbnailvid').append("<img src='"+vidThumbnail+"'alt='YouTube video thumbnail'></img>");
 
 
@@ -68,12 +68,15 @@ if (hourNow > 18){
   greeting = 'Good afternoon. ';
 } else if (hourNow > 0) {
   greeting = 'Good morning. ';
+} else {
+  greeting = "Welcome to The Marvin";
 }
+
 
 console.log("We gonna say " +greeting+ "at this time");
 
 $('.temperture').html(greeting+ "<br>The temperature in "+location+", "+country+" is " +temperature+ " celcius. ");
-//IM GETTING FUCKING PISSED OFF WHY WONT THE IMAGE GO ONTO THE HTML
+//IM GETTING FUCKING PISSED OFF WHY WON'T THE IMAGE GO ONTO THE HTML
 
 //$('#icon').append("<img src='"+wicon+"'></img>");
 
@@ -82,3 +85,5 @@ $('.temperture').html(greeting+ "<br>The temperature in "+location+", "+country+
 });
 });
 });
+
+// I HATE JAVASCRIPT

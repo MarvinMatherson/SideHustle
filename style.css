@@ -23,7 +23,7 @@ nav{
 	display: flex;
 	justify-content: space-around;
 }
-
+s
 
 nav li{
 	position:relative;
@@ -54,9 +54,13 @@ align-self: left;
 }
 
 
-#headerItem2{
+#headerItem2 {
 	position: relative;
 	top:2px;
+}
+
+#headerItem2 h1:hover{
+	color: black;
 }
 
 #headerItem3 li{
@@ -79,7 +83,7 @@ align-self: left;
 color: #FFF;
 }
 
-----------------------------------------------------
+
 #weather{
 	text-align: center;
 	font-size: 25px;
@@ -108,7 +112,8 @@ iframe{
 	border-radius: 20px;
 }
 
-
+#linkus{
+}
 
 #Mainevent{
 	background-color: #ffa382;
@@ -116,6 +121,9 @@ iframe{
 	border: 1px solid black;
 }
 
+.blogContent{
+
+}
 
 #bloggo{
 	background-color:#008db1;
@@ -129,6 +137,7 @@ iframe{
 	position: relative;
   top: 3px;
 }
+
 
 #factday{
 	background-color:#008db1;
@@ -182,6 +191,14 @@ top: 3px;
 border: 1px solid black;
 }
 
+.nevid{
+	color: #fff;
+	background-color: #008db1;
+	border-radius: 20px;
+	padding: 5px;
+	border: 1px solid black;
+}
+
 
 .introtext{
 	text-align: center;
@@ -211,11 +228,11 @@ border: 1px solid black;
 }
 
 .secondtitle{
-	position:;
-	font-size: 30px;
+	font-size: 20px;
 }
 
-
+.vidDescription{
+}
 
 .imagescarimg{
 	width: 20px;
